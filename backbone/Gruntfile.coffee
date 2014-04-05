@@ -33,7 +33,7 @@ module.exports = (grunt)->
       server:
         options:
           port: 8000
-          base: 'example'
+          base: 'example/'
           keepalive: true
 
   })
