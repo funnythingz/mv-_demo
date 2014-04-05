@@ -1,0 +1,13 @@
+{
+  "name": "unknown",
+  "version": "0.0.0",
+  "description": "none",
+  "author": "funnythingz",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-clean": "latest"
+  }
+}
