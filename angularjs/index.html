@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="testApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angularjs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+      .entry {
+        margin-bottom: .5em;
+      }
+    </style>
+  </head>
+  <body ng-controller="hogeCtrl">
+
+    <p>Hello Angularjs {{'!'}}</p>
+
+    <section ng-repeat="entry in entries">
+      <article class="entry">
+        <div class="title">{{entry.title}}</div>
+        <div class="description">{{entry.description}}</div>
+      </article>
+    </section>
+
+  </body>
+</html>
