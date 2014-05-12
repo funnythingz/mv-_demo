@@ -2,9 +2,21 @@
 
   'use strict';
 
+  var isEmpty = function(arg) {
+
+    if(typeof arg !== null) {
+        return true;
+    }
+
+    return false;
+  }
+
   var testApp = angular.module('testApp', []);
 
   testApp.controller('hogeCtrl', function ($scope) {
+
+    $scope.yourName = (isEmpty($scope.yourName))? 'YourName' : $scope.yourName;
+
     $scope.entries = [
       {
         'title' : 'hogeTitle1',
