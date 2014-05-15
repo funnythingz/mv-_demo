@@ -1,0 +1,30 @@
+<!Doctype html><html ng-app="app"><head><meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+<script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="//github.com/funnythingz/angular-google-maps/raw/master/dist/angular-google-maps.min.js"></script>
+<script src="app.js"></script>
+</head><body>
+
+<section ng-controller="simpleController">
+
+  <google-map center="map.center"
+              zoom="map.zoom"
+              draggable="true"
+              dragging="map.dragging"
+              bounds="map.bounds"
+              events="map.events"
+              options="map.options"
+              pan="true"
+              control="map.control">
+
+  <marker coords="marker.coords"
+          options="marker.options"
+          events="marker.events"></marker>
+
+  </google-map>
+
+</section>
+
+</body></html>
