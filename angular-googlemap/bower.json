@@ -1,7 +1,0 @@
-{
-  "name": "angular-googlemap",
-  "dependencies": {
-    "angular": "https://github.com/angular/bower-angular.git#",
-    "underscore": "https://github.com/jashkenas/underscore.git#"
-  }
-}
