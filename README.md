@@ -1,1 +1,1 @@
-# MV* sandbox
+# sandbox-js
