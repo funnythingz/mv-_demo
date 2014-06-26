@@ -3,5 +3,5 @@
 ## install
 
 ```
-% npm install vue
+% bower install vue
 ```
