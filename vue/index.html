@@ -10,25 +10,30 @@
         text-decoration: line-through;
       }
     </style>
-    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./bower_components/vue/dist/vue.min.js"></script>
+    <script src="./bower_components/locstor/locstor.min.js"></script>
   </head>
   <body>
 
     <div class="container">
-      <div id="demo">
-        <h1>{{title}}}</h1>
-        <form role="form">
+      <div>
+        <h1 id="heading">{{title}}}</h1>
+
+        <section>
           <div class="form-group">
             <label for="addTask">Add Task</label>
-            <input type="text" class="form-control" id="addTask" placeholder="Add Task">
+            <input type="text" class="form-control" id="addTask" placeholder="Add Task" v-on="keyup: addTask | key enter" v-attr="value: inputTask" v-model="inputTask">
           </div>
-        </form>
-        <div class="list-group">
-          <a href="#"
-            v-repeat="todos"
-            v-on="click: done = !done"
-            class="{{done ? 'list-group-item done' : 'list-group-item'}}">{{content}}</a>
-        </div>
+        </section>
+
+        <section id="taskList">
+          <div class="list-group">
+            <a href="#"
+              v-repeat="todos"
+              v-on="click: done = !done"
+              class="{{done ? 'list-group-item done' : 'list-group-item'}}">{{content}}</a>
+          </div>
+        </section>
       </div>
     </div>
 

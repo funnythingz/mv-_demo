@@ -1,26 +1,47 @@
-(function() {
-  "use strict";
+"use strict";
 
-  var demo = new Vue({
-  
-    el: '#demo',
+var heading = new Vue({
 
-    data: {
-      title: 'todos',
+  el: '#heading',
 
-      todos: [
-        {
-          content: 'hoge',
-          done: false
-        },
-        {
-          content: 'foo',
-          done: false
+  data: {
+    title: 'todos',
+  }
+
+});
+
+var addTask = new Vue({
+
+  el: '#addTask',
+
+  methods: {
+    addTask: function(e) {
+               e.preventDefault();
+               console.log(this.$data.inputTask);
+             }
+  },
+
+  data: {
+          inputTask: ""
         }
-      ]
-    }
 
-  });
+});
 
+var taskList = new Vue({
 
-})();
+  el: '#taskList',
+
+  data: {
+    todos: [
+      {
+        content: 'hoge',
+        done: false
+      },
+      {
+        content: 'foo',
+        done: false
+      }
+    ]
+  }
+
+});

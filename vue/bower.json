@@ -1,0 +1,7 @@
+{
+  "name": "test",
+  "dependencies": {
+    "vue" : "https://github.com/yyx990803/vue.git#*",
+    "locstor" : "https://github.com/justindeguzman/locstor.git#*"
+  }
+}
