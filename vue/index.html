@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+      .list-group-item.done,
+      .list-group-item.done:hover {
+        text-decoration: line-through;
+      }
+    </style>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="demo">
+        <h1>{{title}}}</h1>
+        <form role="form">
+          <div class="form-group">
+            <label for="addTask">Add Task</label>
+            <input type="text" class="form-control" id="addTask" placeholder="Add Task">
+          </div>
+        </form>
+        <div class="list-group">
+          <a href="#"
+            v-repeat="todos"
+            v-on="click: done = !done"
+            class="{{done ? 'list-group-item done' : 'list-group-item'}}">{{content}}</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
