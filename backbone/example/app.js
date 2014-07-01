@@ -1,11 +1,5 @@
 $(function() {
 
-    var AppView = Backbone.Model.extend({
-
-        greeting: 'hello backbone!'
-
-    });
-
     var AppView = Backbone.View.extend({
 
         el: $('#app'),
@@ -15,7 +9,7 @@ $(function() {
         },
 
         render: function() {
-            this.$el.html('this is AppView');
+            this.$el.html('backbone app');
             return this;
         }
 
