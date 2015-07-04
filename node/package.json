@@ -1,0 +1,14 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "build": "browserify src/main.js > build/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "latest"
+  }
+}
